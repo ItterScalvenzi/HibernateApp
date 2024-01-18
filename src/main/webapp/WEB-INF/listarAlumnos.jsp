@@ -5,14 +5,16 @@
 <html>
 	<head>
 		<title>Listado de Alumnos</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
 		<h1>Listar Alumnos</h1>
-		<a href="${pageContext.request.contextPath }/ServletRedireccionar">Agregar Alumno</a>
+		
 		<br/>
 		<br/>
-		<table border= 1>
-			<tr>
+		<div>
+			<table class="w3-table-all w3-hoverable">
+			<tr class="w3-light-blue">
 				<th>Alumno ID</th>
 				<th>Nombre</th>
 				<th>Domicilio</th>
@@ -35,5 +37,12 @@
 				</tr>
 			</c:forEach>
 		</table>
+		</div>
+		
+		<div class="w3-display-middle w3-margin-top w3-center">
+			<a class="w3-btn w3-cyan w3-hover-teal w3-round-xxlarge"
+			 href="${pageContext.request.contextPath }/ServletRedireccionar">Agregar Alumno</a>
+		</div>
+		
 	</body>
 </html>

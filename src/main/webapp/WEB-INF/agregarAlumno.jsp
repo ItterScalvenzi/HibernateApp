@@ -5,32 +5,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Agregar Alumno</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
 		<h1>Agregar Alumno</h1>
 		<form name="form1" action="${pageContext.request.contextPath }/ServletAgregar" method="post">
-			Nombre: <input type="text" name="nombre"/>
-			<br/>
-			Apellido: <input type="text" name="apellido"/>
-			<br/>
-			<br/>
-			Datos Domicilio
-			<br/>
-			Calle: <input type="text" name="calle"/>
-			<br/>
-			No. calle: <input type="text" name="noCalle"/>
-			<br/>
-			Ciudad: <input type="text" name="ciudad"/>
-			<br/>
-			Pais: <input type="text" name="pais"/>
-			<br/>
-			<br/>
-			Datos Contacto
-			<br/>
-			Email: <input type="email" name="email"/>
-			<br/>
-			Teléfono: <input type="tel" name="telefono"/>
-			<br/>
+			<label>Nombre:</label> 
+			<input class="w3-input w3-border w3-round" type="text" name="nombre"/>
+			<label>Apellido</label>
+			<input class="w3-input w3-border w3-round" type="text" name="apellido"/>
+			
+			<h3>Datos Domicilio</h3>
+		
+			<label>Calle</label>
+			<input class="w3-input w3-border w3-round" type="text" name="calle"/>
+			<label>Número de calle</label>
+			<input class="w3-input w3-border w3-round" type="text" name="noCalle"/>
+			<label>Ciudad</label>
+			<input class="w3-input w3-border w3-round" type="text" name="ciudad"/>
+			<label>Pais</label>
+			<input class="w3-input w3-border w3-round" type="text" name="pais"/>
+			
+			<h3>Datos Contacto</h3>
+			
+			<label>Email</label>
+			<input class="w3-input w3-border w3-round" type="email" name="email"/>
+			<label>Teléfono</label>
+			<input class="w3-input w3-border w3-round" type="tel" name="telefono"/>
 			<input type="submit" name="Agregar" value="Agregar"/>
 		</form>
 	</body>
