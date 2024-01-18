@@ -4,14 +4,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Listado de Alumnos</title>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
 		<h1>Listar Alumnos</h1>
 		
-		<br/>
-		<br/>
 		<div>
 			<table class="w3-table-all w3-hoverable">
 			<tr class="w3-light-blue">
@@ -24,7 +23,7 @@
 			<c:forEach var="alumno" items="${alumnos }">
 				<tr>
 					<td>
-						<a href="${pageContext.request.contextPath }
+						<a class="w3-badge w3-green w3-hover-blue" href="${pageContext.request.contextPath }
 						/ServletModificar?idAlumno=${alumno.idAlumno }">
 						${alumno.idAlumno }
 						</a>
@@ -38,9 +37,9 @@
 			</c:forEach>
 		</table>
 		</div>
-		
-		<div class="w3-display-middle w3-margin-top w3-center">
-			<a class="w3-btn w3-cyan w3-hover-teal w3-round-xxlarge"
+	
+		<div class="w3-container w3-margin-top w3-center">
+			<a class="w3-btn w3-cyan w3-hover-teal w3-round-xxlarge w3-margin-top"
 			 href="${pageContext.request.contextPath }/ServletRedireccionar">Agregar Alumno</a>
 		</div>
 		
